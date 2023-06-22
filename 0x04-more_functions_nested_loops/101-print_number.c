@@ -6,10 +6,10 @@
  */
 void print_number(int n)
 {
-	unsigned int t;
-	unsigned int d;
-	unsigned int p;
-	double j;
+	unsigned int t = n;
+	unsigned int d = n;
+	unsigned int p = n;
+	double j = 1;
 
 	if (n == 0)
 	{
