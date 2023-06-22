@@ -11,7 +11,7 @@ int main(void)
 
 	while (num > div)
 	{
-		if (num % div ==0)
+		if (num % div == 0)
 		{
 			num /= div;
 			div = 2;
