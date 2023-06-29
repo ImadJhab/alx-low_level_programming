@@ -6,24 +6,18 @@
  */
 void print_number(int n)
 {
+	unsigned int x;
+
 	if (n < 0)
 	{
 		_putchar('-');
-		if (n == -2147483648)
-		{
-			_putchar('2');
-			n %= 1000000000;
-		}
-		print_number(-n);
-	}
-	else if (n <= 9)
-	{
-		_putchar(n + '0');
+		n *= -1;
 	}
 
-	else
-	{
-		print_number(n / 10);
-		print_number(n % 10);
-	}
+	x = n;
+
+	if (x / 10)
+		print_number(x / 10);
+
+	_putchar(x % 10 + '0');
 }
