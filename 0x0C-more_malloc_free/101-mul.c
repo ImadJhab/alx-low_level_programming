@@ -1,5 +1,6 @@
 #include "main.h"
 #include <unistd.h>
+#include <stdlib.h>
 int _atoi(char *s);
 int _isdigit(int c);
 int is_numeric(char *str);
