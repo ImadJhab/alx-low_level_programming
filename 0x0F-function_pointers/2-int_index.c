@@ -8,7 +8,7 @@
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i;
+	unsigned int i;
 
 	if (array && cmp)
 	{
